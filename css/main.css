@@ -1,0 +1,165 @@
+body{
+    /*Margen predeterminado (fuera del elemento)*/
+    margin: 0;
+    /*Margen para dentro del elemento*/
+    padding: 0;
+    /*Tamaño del texto*/
+    font-size: 13px;
+    /*Fuente del texto*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*****************NAVEGACIÓN*****************/
+
+header{
+    width: 100%;
+    height: 55px;
+}
+
+/*Primero hay que entrar a header, para poder acceder a nav*/
+header nav{
+    display: flex; /*Permite mover los elementos de manera flexible*/
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{ /*Siempre accedemos a las clases con un punto*/
+    list-style: none; /*none, para quitar las viñetas*/
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /*Para que los elementos no floten dentro de la cajita verde, sino que se coloquen justo en el centro*/
+    /*Altura. Es bueno colocarlo*/
+    height: auto; /*La altura se adaptará de manera automática a los elementos*/   
+}
+
+nav .nav-right-section a{ /*Editando el texto (las anclas)*/
+    color: rgb(21, 21, 21);
+    text-decoration: none; /*Para quitar la línea que aparece debajo de las anclas*/
+    margin-right: 23px; /*Para separar cada ancla, una de la otra*/
+}
+
+nav .nav-right-section .nrs-menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain; /*Es necesario adecuar el tamaño del ícono al tamaño de la caja que lo contiene*/
+    
+}
+
+nav .nav-right-section img{
+    margin-left: 22px;
+    border-radius: 100px; /*Redondear la imagen del michi*/
+    width: 32px;
+}
+
+/******************MAIN******************/
+
+main{
+    text-align: center;
+    margin-top: 160px;
+}
+
+/*Sección logo*/
+main .main-logo{
+    width: 530px; /*Conviene que la anchura de todas las demás cajas sea la misma*/
+    margin: 0 auto; /*Para que la cajita contenga dentro sus elementos*/
+    margin-bottom: 35px;
+}
+
+main .main-logo img{
+    height: 110px;
+}
+
+/*Sección Input*/
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+/*Cajita gris redondeada, buscador*/
+main .main-input-container{
+    /* ancho de línea, estilo, color*/
+    border: 1px solid #dfe1e5;
+    align-items: center;
+    border-radius: 30px;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input-container:hover{
+    border-color: #dfe1e500;
+    box-shadow: 0 0 5px #20212447;
+}
+
+main .main-input input{
+    height: 40px;
+    width: 410px;
+    margin-left: 16px;
+    margin-right: 10px;
+    border: none;
+    outline: none; /*Quita el borde cuando el input está activo, es decir cuando picamos en él*/
+}
+
+main .main-input .search-icon{
+    /*Imagen lupa*/
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-position: center;
+    width: 13px;
+    height: 13px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 17px;
+    height: 17px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    width: 17px;
+    height: 17px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+}
+
+main .main-buttons{
+    width: 550px;
+    margin: 0 auto; /*El primer valor indica los márgenes verticales (arriba y abajo). El segundo aplica a los márgenes horizontales (izquierda y derecha)*/
+}
+
+main .main-buttons div{
+    display: inline-block; /*Coloca los elementos en una misma línea*/
+}
+
+main .main-buttons button{
+    border: 0; /*Quitamos los bordes*/
+    height: 35px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 4px;
+    margin-right: 10px;
+    padding: 0 15px;
+}
+
+main .main-buttons button:hover{
+    color: #202124;
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+
+
